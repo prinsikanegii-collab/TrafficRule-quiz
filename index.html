@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RoadWise - Traffic Rules Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>RoadWise</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#rules">Traffic Rules</a>
+        <button onclick="showDifficulty()">Start Quiz</button>
+    </nav>
+</header>
+<section id="home">
+    <div class="hero-content">
+        <h2>Learn Traffic Rules.<br>Drive Safe. Stay Safe.</h2>
+        <p>Test your knowledge of traffic rules, road signs and road safety with RoadWise.</p>
+        <button onclick="showDifficulty()">Start Quiz</button>
+    </div>
+    <div class="traffic-light">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+    </div>
+</section>
+<section id="about">
+    <h2>About RoadWise</h2>
+    <p>RoadWise is an educational website designed to spread awareness about traffic rules and road safety. It helps users understand important road rules through simple information and interactive quizzes.</p>
+    <div class="features">
+        <div>
+            <h3>Learn</h3>
+            <p>Understand important traffic rules.</p>
+        </div>
+        <div>
+            <h3>Practice</h3>
+            <p>Test your knowledge through quizzes.</p>
+        </div>
+        <div>
+            <h3>Improve</h3>
+            <p>Check your score and learn from mistakes.</p>
+        </div>
+    </div>
+</section>
+<section id="rules">
+    <h2>Important Traffic Rules</h2>
+    <div class="rules-container">
+        <div class="rule-card">
+            <h3>Red Signal</h3>
+            <p>Stop before the stop line.</p>
+        </div>
+        <div class="rule-card">
+            <h3>Yellow Signal</h3>
+            <p>Prepare to stop and stop if it is safe.</p>
+        </div>
+        <div class="rule-card">
+            <h3>Green Signal</h3>
+            <p>Proceed only when the road is clear.</p>
+        </div>
+        <div class="rule-card">
+            <h3>Wear a Helmet</h3>
+            <p>Wear a properly fastened helmet while riding a two-wheeler.</p>
+        </div>
+        <div class="rule-card">
+            <h3>Use Seat Belts</h3>
+            <p>Always wear a seat belt while travelling in a car.</p>
+        </div>
+        <div class="rule-card">
+            <h3>Follow Speed Limits</h3>
+            <p>Always drive within the permitted speed limit.</p>
+        </div>
+        <div class="rule-card">
+            <h3>Pedestrian Crossing</h3>
+            <p>Slow down and allow pedestrians to cross safely.</p>
+        </div>
+        <div class="rule-card">
+            <h3>Avoid Mobile Phones</h3>
+            <p>Never use a mobile phone while driving.</p>
+        </div>
+        <div class="rule-card">
+            <h3>Emergency Vehicles</h3>
+            <p>Give way safely to emergency vehicles.</p>
+        </div>
+    </div>
+</section>
+<section id="difficulty">
+    <h2>Traffic Rules Quiz</h2>
+    <p>Select your difficulty level to begin the quiz.</p>
+    <div class="levels">
+        <button onclick="startQuiz('easy')">Easy</button>
+        <button onclick="startQuiz('medium')">Medium</button>
+        <button onclick="startQuiz('hard')">Hard</button>
+    </div>
+</section>
+<section id="quiz">
+    <h2 id="level-name"></h2>
+    <p id="question-number"></p>
+    <div class="progress">
+        <div id="progress-bar"></div>
+    </div>
+    <h3 id="question"></h3>
+    <div id="options"></div>
+    <button id="next-button" onclick="nextQuestion()">Next</button>
+</section>
+<section id="result">
+    <h2>Quiz Completed!</h2>
+    <h3 id="final-score"></h3>
+    <p id="feedback"></p>
+    <h3>Incorrect Answers</h3>
+    <div id="answer-review"></div>
+    <button onclick="showDifficulty()">Restart Quiz</button>
+</section>
+<footer>
+    <p>RoadWise | Learn Today, Drive Safely Tomorrow.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
